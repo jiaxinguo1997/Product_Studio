@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/docs/4.1/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+  <title>Album example for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./lib/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./lib/album.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="bg-dark collapse" id="navbarHeader" style="">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="http://getbootstrap.com/docs/4.1/examples/album/#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="http://getbootstrap.com/docs/4.1/examples/album/#" class="text-white">Like on Facebook</a></li>
+              <li><a href="http://getbootstrap.com/docs/4.1/examples/album/#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="http://getbootstrap.com/docs/4.1/examples/album/#" class="navbar-brand d-flex align-items-center">
+          <strong>HSBC - DiGi</strong>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="row">
+      <div class="col-md-2">
+          <img src="./img/1a6a05d3-ec4d-4a78-b0a7-f78da2aef5dd.jpg" class="img-fluid">
+      </div>
+
+
+    
+      <div class="col-md-8">
+        <section class="jumbotron text-center">
+            <div class="container">
+              <h1 class="jumbotron-heading">Ipsita Basu</h1>
+              <p class="lead text-muted">Making it easier to control your data:<br /> <u>Decline</u> the company (or specific data) that you wish no longer have access to your data, or <u>Approve</u> for DiGi sharing your data with new companies.</p>
+              <div id="updateHere"></div>
+              <p>
+                <a class="btn btn-danger" id="decline-all-button"><b>Decline All</b></a>
+                <a class="btn btn-success" id="approve-all-button"><b>Approve All</b></a>
+              </p>
+            </div>
+          </section>
+      </div>
+    
+
+      <div class="col-md-2">
+          <img src="./img/a92787cc-fc09-407d-b1f8-acc6be56d21c.jpg" class="img-fluid">
+      </div>
+    </div>
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row" id="content">
+          
+        </div>
+       <!--  <div class="row">
+         <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="./img/WechatIMG10.png">
+              <div class="card-body">
+                <p class="card-text">Product: Debit Account # 87659986 <br />Data: name, address, email, job, gender, passport, face, fingerprints, date of birth, financial statements</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/08/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG3.png">
+              <div class="card-body">
+                <p class="card-text">Product: Credit Card # 677887779900 <br />Data: name, address, email job, gender, passport, face, fingerprints, date of birth, financial statements</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/09/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/Screen Shot 2018-11-25 at 10.49.00 AM.png">
+              <div class="card-body">
+                <p class="card-text">Product: Tuition MBA 2018 - 2019 <br />Data: name, address, job, email, gender, passport, face, fingerprints, date of birth, email, financial statements, banks infomation</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/08/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG5.png">
+              <div class="card-body">
+                <p class="card-text">Product: Amazon Prime ,since 2011 <br />Data: name, address, email, gender, date of birth, J.P morgan credit card/p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/11/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG6.png">
+              <div class="card-body">
+                <p class="card-text">Product: Costumer since 2018<br />Data: name, address, email, gender, date of birth, J.P morgan credit card, fingerprints</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/08/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG7.png">
+              <div class="card-body">
+                <p class="card-text">Product: Costumer since 2017<br />Data: name, address, email, gender, date of birth, J.P morgan credit card, fingerprints</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/08/2018</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG8.png">
+              <div class="card-body">
+                <p class="card-text">Product: Member since 2015<br />Data: name, address, email, gender, date of birth, J.P morgan credit card</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  <small class="text-muted">Last Activity 11/08/2018</small>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm pending">
+              <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/WechatIMG9.png">
+              <div class="card-body">
+                <p class="card-text"><u>Product</u>: Employee Details<br /><u>Request Data</u>: name, address, email, gender, date of birth, HSBC debit account, face, fingerprints, job history, education history</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary approve">Approve</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm pending">
+                <img class="card-img-top"  style="height: 225px; width: 100%; display: block;" src="img/d4b83693-d48d-48f6-bc3d-16ae22c2f777.jpg">
+                <div class="card-body">
+                  <p class="card-text"><u>Product</u>: Member 6 months<br /><u>Request Data</u>: date of birth, name, address, email, weight, JP morgan credit card</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary approve">Approve</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary disapprove">Decline</button>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div> -->
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="http://getbootstrap.com/docs/4.1/examples/album/#">Back to top</a>
+      </p>
+     </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./lib/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="./lib/popper.min.js"></script>
+  <script src="./lib/bootstrap.min.js"></script>
+  <script src="./lib/holder.min.js"></script>
+  <script src="./lib/myscript.js"></script>
+
+</body>
+
+</html>
